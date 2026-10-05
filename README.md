@@ -54,6 +54,19 @@ Password: password123
 
 Pour modifier : Cliquez sur **⚙️** dans le side panel.
 
+### 🔑 Clé API Gemini (backend)
+
+Le service Java lit la clé Google Gemini depuis la variable d'environnement `GEMINI_API_KEY` (elle n'est jamais stockée dans le code) :
+
+```bash
+# Linux / macOS
+export GEMINI_API_KEY="votre_cle"
+# Windows (PowerShell)
+$env:GEMINI_API_KEY="votre_cle"
+```
+
+Obtenez une clé gratuite sur [Google AI Studio](https://aistudio.google.com/apikey), puis redémarrez le serveur d'application.
+
 ---
 
 ## 🏗️ Architecture
